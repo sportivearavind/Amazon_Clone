@@ -36,9 +36,9 @@ next_btn.addEventListener("click", (e) => {
 const scrollContainer = document.querySelectorAll(".products");
 
 for (const item of scrollContainer) {
-    item.addEventListener("wheel", (evt) => {
-      evt.preventDefault(); //first we prevent the default feature
-      // . evt.deltaY contains the vertical scroll amount, which is used here to scroll horizontally. This effectively changes vertical scrolling into horizontal scrolling for the element.
-      item.scrollLeft += evt.deltaY;
-    })
+  item.addEventListener("wheel", (evt) => {
+    evt.preventDefault(); //first we prevent the default feature
+    // . evt.deltaY contains the vertical scroll amount, which is used here to scroll horizontally. This effectively changes vertical scrolling into horizontal scrolling for the element.
+    item.scrollLeft += evt.deltaY;
+  });
 }
